@@ -1,7 +1,7 @@
 'use strict'
 
 // Local
-let mongoDB = 'mongodb://localhost:27017/test';
+let mongoDB = 'mongodb://localhost:27017/cinePoke';
 
 
 let urlWallet = "http://localhost:8080/#/";

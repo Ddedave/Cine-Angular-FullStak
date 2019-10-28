@@ -6,16 +6,14 @@ var Clients = require('../models/clients');
 
 async function test(req, res) {
     let b = req.body;
+    console.log(req.body);
     if (f.vC(b, 'nombre') &&  f.vC(b, 'email') && f.vC(b, 'id_cliente') && f.vC(b, 'fecha_nac') && f.vC(b, 'categoria')) {
         let nombre = f.vS(b.nombre);
-        
-        
         let id_cliente_ = f.vS(b.id_cliente);
         let fecha_nac_ = f.vS(b.fecha_nac);
         let categoria = f.vS(b.categoria);
         let email_ = f.vS(b.email);
-        
-        console.log(b)
+
         let clients= new Clients();
         clients.nombre = nombre;
         clients.id_cliente = id_cliente_;
